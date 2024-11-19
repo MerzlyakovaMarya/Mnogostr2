@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><title>Бургер-меню с Offcanvas</title>
+<style>
+  .header-image {
+      position: relative;
+      text-align: center;
+      color: white;
+  }
+
+  .header-image img {
+      width: 100%;
+      height: auto;
+  }
+
+  .header-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2vw;
+      padding: 20px;
+  }
+  .btn-bl {
+    background-color: #47403c; 
+    color: white; 
+}
+
+.btn-bl:hover {
+    background-color: #94908e5e; 
+    color: white; 
+}
+.btn-bl:focus {
+    background-color: #e4d5ce5e; 
+    color: white; 
+} 
+
+.btn-bl:active {
+    background-color: #47403c; 
+    color: white; }
+
+.bg-color-bl{
+  background-color:  #e0e0e052;
+}
+  *{font-family: roboto;
+ }
+</style></head>
+<body>
+  <div class="container py-3">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid px-6">
+        <a class="navbar-brand" href="#" style="font-size: 45px; font-weight: 500;">Travel.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-end ml-3 px-8" id="navbarNav">
+        <ul class="navbar-nav d-none d-lg-flex">
+              
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="font-weight: 500; font-size: 20px">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="font-weight: 500; font-size: 20px" >Stays</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index4.html" style="font-weight: 500; font-size: 20px" >Flights</a>
+                </li>
+                <li class="nav-item"></li>
+                    <a class="nav-link" href="index3.html" style="font-weight: 500; font-size: 20px">Packages</a>
+                </li>
+                <li class="nav-item"></li>
+                    <a class="nav-link" href="index2.html" style="font-weight: 500; font-size: 20px">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Offcanvas меню -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Travel.</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" style="font-weight: 500; font-size: 20px">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="font-weight: 500; font-size: 20px" >Stays</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index4.html" style="font-weight: 500; font-size: 20px" >Flights</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index3.html" style="font-weight: 500; font-size: 20px">Packages</a>
+            </li>
+            <li class="nav-item"></li>
+                    <a class="nav-link" href="index2.html" style="font-weight: 500; font-size: 20px">Sign Up</a>
+                </li>
+        </ul>
+    </div>
+</div> 
+<div class="header-image">
+  <img src="img/image 211.png" alt="Пример изображения">
+
+</div>
+<br><br>
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center mt-5">
+  <div class="col">
+    <div class="card mb-4 rounded-3 shadow-sm">
+      <div class="card-header py-3">
+        <h4 class="my-0 fw-normal">Economy</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$200<small class="text-body-secondary fw-light">/from</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>10 kg</li>
+          <li>Food included</li>
+          <li>Changes are prohibited</li>
+          <li>Help center access</li>
+        </ul>
+        <button type="button" class="w-100 btn btn-lg btn-outline-primary btn-bl ">Buy right now</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card mb-4 rounded-3 shadow-sm">
+      <div class="card-header py-3">
+        <h4 class="my-0 fw-normal">Comfort</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$700<small class="text-body-secondary fw-light">/from</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>15 kg</li>
+          <li>Food included</li>
+          <li>Changes are allowed</li>
+          <li>Help center access</li>
+        </ul>
+        <button type="button" class="w-100 btn btn-lg btn-primary btn-bl ">Buy right now</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+      <div class="card-header py-3 text-bg-primary border-primary">
+        <h4 class="my-0 fw-normal">Business Class</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$1500<small class="text-body-secondary fw-light">/from</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>20 kg</li>
+          <li>Food included</li>
+          <li>Changes are allowed</li>
+          <li>Help center access</li>
+        </ul>
+        <button type="button" class="w-100 btn btn-lg btn-primary btn-bl ">Buy right now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+  <!-- Модальное окно -->
+  <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="subscribeModalLabel">Подпишитесь на наши новости</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Ваш email</label>
+              <input id="e-mail" input type=email placeholder="введите email" name="email" class="form-control input-box rm-border text-center"> 
+            </div>
+            
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-bl " data-bs-dismiss="modal">Закрыть</button>
+          <button type="submit" class="btn btn-primary">Подписаться</button></form>
+        </div>
+      </div>
+    </div>
+  </div>
+<br><br><br><br>
+  <div class="container">
+    <div class="row">
+        
+
+
+
+</div>
+      <div class="container d-flex justify-content-center align-items-center" >
+        <div class="d-flex align-items-center">
+          <img src="img/iPhone 13 Mockup.png" alt="Vertical Photo" class="img-fluid" style="height: 300px; width: auto; margin-right: 20px;"> <!-- Замените на путь к вашему изображению -->
+          <button type="button" class="btn btn-primary btn-bl " data-bs-toggle="modal" data-bs-target="#subscribeModal">
+            Подписаться на новости
+          </button>
+        </div>
+      </div>
+
+      <footer class="bg-dark text-white mt-5">
+        <div class="container">
+            <div class="row">
+                
+        <div class="text-center py-3">
+            &copy; 2024 Все права защищены.
+          </div>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
